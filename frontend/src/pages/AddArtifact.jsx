@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import UseAuth from "../hooks/UseAuth";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -25,6 +25,7 @@ const AddArtifact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const artifactTypes = ["Tools", "Weapons", "Documents", "Writings", "Others"];
 
@@ -75,6 +76,7 @@ const AddArtifact = () => {
       await addArtifact(artifactToAdd, token);
 
       toast.success("Artifact added successfully!");
+      setSuccess(true);
 
       setFormData({
         artifactName: "",
@@ -87,17 +89,23 @@ const AddArtifact = () => {
         discoveredBy: "",
         presentLocation: "",
       });
-
-      setTimeout(() => {
-        navigate("/allArtifacts");
-      }, 4000);
     } catch (error) {
-      toast.error(`Error adding artifact: ${error.message}`);
+      toast.error(`Error adding artifact: ${error?.message || "Unknown error"}`);
       console.error(error);
     } finally {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        navigate("/allArtifacts");
+      }, 4000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [success, navigate]);
 
   if (!user) {
     return (
@@ -136,10 +144,7 @@ const AddArtifact = () => {
             required
           />
         </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> 347715e574f99e80de261bd68a8c833e64d14392
         <div>
           <label className="block mb-1 font-semibold">Artifact Image URL</label>
           <input
@@ -206,9 +211,7 @@ const AddArtifact = () => {
         </div>
 
         <div>
-          <label className="block mb-1 font-semibold">
-            Discovered At (e.g., "1799")
-          </label>
+          <label className="block mb-1 font-semibold">Discovered At (e.g., "1799")</label>
           <input
             type="text"
             name="discoveredAt"
@@ -264,9 +267,9 @@ const AddArtifact = () => {
         <button
           type="submit"
           disabled={loading}
-          className="btn-secondary relative z-10 w-full items-center justify-center "
+          className="btn-secondary relative z-10 w-full items-center justify-center"
         >
-          {loading && <span className="loading loading-spinner"></span>}
+          {loading && <span className="loading loading-spinner" aria-label="Loading"></span>}
           {loading ? "Adding..." : "Add Artifact"}
         </button>
       </form>
