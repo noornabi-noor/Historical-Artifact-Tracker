@@ -42,7 +42,6 @@
 }
 
 
-
 @layer components {
   .btn-secondary {
     @apply btn btn-md rounded-full text-black text-lg font-bold shadow-xl
@@ -51,7 +50,6 @@
            transition-all duration-300 border border-amber-100/20;
   }
 }
-
 
 .navbar {
   position: sticky;
