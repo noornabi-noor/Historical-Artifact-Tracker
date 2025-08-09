@@ -136,6 +136,10 @@ const AddArtifact = () => {
             required
           />
         </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 347715e574f99e80de261bd68a8c833e64d14392
         <div>
           <label className="block mb-1 font-semibold">Artifact Image URL</label>
           <input

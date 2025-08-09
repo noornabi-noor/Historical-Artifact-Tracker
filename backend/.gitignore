@@ -1,5 +1,8 @@
 node_modules
 .env
 .vercel
+<<<<<<< HEAD
 
 firebase-adminsdk-fbsvc.json
+=======
+>>>>>>> 347715e574f99e80de261bd68a8c833e64d14392

@@ -42,6 +42,10 @@
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 347715e574f99e80de261bd68a8c833e64d14392
 @layer components {
   .btn-secondary {
     @apply btn btn-md rounded-full text-black text-lg font-bold shadow-xl
@@ -51,6 +55,10 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 347715e574f99e80de261bd68a8c833e64d14392
 .navbar {
   position: sticky;
   top: 0;
