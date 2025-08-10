@@ -11,7 +11,7 @@ const FeaturedArtifacts = () => {
           "https://historical-artifacts-tracker-peach.vercel.app/artifacts"
         );
         const data = await res.json();
-        const sorted = data.sort((a, b) => b.likes - a.likes).slice(0, 6);
+        const sorted = data.sort((a, b) => b.likes - a.likes).slice(0, 8);
         setArtifacts(sorted);
       } catch (err) {
         console.error("Failed to fetch artifacts:", err);
@@ -39,7 +39,7 @@ const FeaturedArtifacts = () => {
           Artifacts
         </span>
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {artifacts.map((artifact) => (
           <div
             key={artifact._id}

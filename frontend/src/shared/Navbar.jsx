@@ -23,8 +23,8 @@ const Navbar = () => {
 
   const navLinkClass = ({ isActive }) =>
     isActive
-      ? "font-semibold text-primary underline underline-offset-4"
-      : "text-white hover:text-primary";
+      ? "font-semibold text-black underline underline-offset-4"
+      : "text-white hover:text-black";
 
   const links = (
     <>
@@ -70,11 +70,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar page-container work-sans-text shadow-2xl mx-auto text-white bg-gray-500"> 
-
-
-    
-      
+    <div className="navbar page-container work-sans-text shadow-2xl mx-auto text-white bg-gradient-to-br from-amber-600 via-amber-900 to-amber-800"> 
 
       <div className="navbar-start">
         <div className="dropdown">
