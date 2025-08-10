@@ -23,7 +23,7 @@ const FeaturedArtifacts = () => {
 
   return (
     <div
-      className="relative mt-12 px-4 py-14 rounded-2xl overflow-hidden shadow-2xl"
+      className="relative mt-12 px-4 py-14 rounded-2xl overflow-hidden shadow-2xl dark:bg-gradient-dark"
       style={{
         background:
           "linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(20,20,20,0.98) 50%, rgba(0,0,0,0.95) 100%)",

@@ -6,16 +6,16 @@ import artifactGif from "../assets/artifacts_img/art_gif.webp";
 const Banner = () => {
   return (
     <div
-      className="work-sans-text min-h-screen px-4 py-10 sm:py-16 mt-7 relative overflow-hidden"
+      className="work-sans-text min-h-screen px-4 py-10 sm:py-16 mt-7 relative overflow-hidden dark:bg-gradient-dark"
       style={{
         background:
           "linear-gradient(135deg, #0f0f0f, #1e1e1e 50%, #0f0f0f)",
       }}
     >
       {/* Glowing gradient overlays */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,215,0,0.05),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(255,165,0,0.05),transparent_50%)]" />
-      <div className="absolute inset-0 backdrop-blur-sm bg-black/10" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,215,0,0.05),transparent_50%)] dark:bg-[radial-gradient(circle_at_20%_30%,rgba(255,215,0,0.1),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(255,165,0,0.05),transparent_50%)] dark:bg-[radial-gradient(circle_at_80%_70%,rgba(255,165,0,0.1),transparent_50%)]" />
+      <div className="absolute inset-0 backdrop-blur-sm bg-black/10 dark:bg-black/20" />
 
       <div className="relative z-10 hero-content flex flex-col-reverse lg:flex-row items-center gap-8">
         

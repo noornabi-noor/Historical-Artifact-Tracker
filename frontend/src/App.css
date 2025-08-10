@@ -58,13 +58,18 @@
   top: 0;
   z-index: 1000;
   background-color: base-200;
-  padding: 16px;
+  padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
 .page-container {
-  max-width: 2000px; /* control page width */
-  margin: 0 auto;    /* center content */
-  padding: 0 20px;   /* gap from left & right */
+  max-width: 2000px; 
+  margin: 0 auto;    
+  padding: 0 20px;   
+}
+
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #0f0f0f, #1e1e1e 50%, #0f0f0f);
 }

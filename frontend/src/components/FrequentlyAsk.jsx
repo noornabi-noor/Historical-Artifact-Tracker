@@ -69,7 +69,7 @@ const FrequentlyAsk = () => {
             <CircleHelp className="h-5 w-5 text-amber-400" />
             <span className="text-amber-400 font-medium">Knowledge Base</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-wide">
+          <h2 className="text-3xl md:text-3xl font-bold text-white mb-6 tracking-wide">
             Frequently Asked{" "}
             <span className="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">
               Questions

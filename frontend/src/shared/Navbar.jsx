@@ -23,8 +23,8 @@ const Navbar = () => {
 
   const navLinkClass = ({ isActive }) =>
     isActive
-      ? "font-semibold text-black underline underline-offset-4"
-      : "text-white hover:text-black";
+      ? "font-semibold text-black dark:text-primary underline underline-offset-4"
+      : "text-white hover:text-black dark:hover:text-primary";
 
   const links = (
     <>
@@ -70,8 +70,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar page-container work-sans-text shadow-2xl mx-auto text-white bg-gradient-to-br from-amber-600 via-amber-900 to-amber-800"> 
-
+    <div className="navbar page-container work-sans-text shadow-2xl mx-auto text-white bg-gradient-to-br from-amber-600 via-amber-900 to-amber-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -98,7 +97,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center work-sans-text gap-2">
-          <img src={logo} className="w-12 h-12" alt="logo" />
+          <Link to="/">
+            <img src={logo} className="w-12 h-12" alt="logo" />
+          </Link>
+
           <a className="btn btn-ghost text-xl hidden md:inline-flex">
             Historical{" "}
             <motion.span
@@ -134,18 +136,27 @@ const Navbar = () => {
               </div>
             </div>
 
-            <button onClick={handleLogout} className="btn btn-sm md:btn-md rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-700 text-black font-bold text-lg shadow-xl hover:scale-105 hover:from-amber-400 hover:to-amber-600 transition-all duration-300 border border-amber-100/20">
+            <button
+              onClick={handleLogout}
+              className="btn btn-sm md:btn-md rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-700 text-black font-bold text-lg shadow-xl hover:scale-105 hover:from-amber-400 hover:to-amber-600 transition-all duration-300 border border-amber-100/20"
+            >
               Logout
             </button>
           </>
         ) : (
           <>
             {location.pathname === "/register" ? (
-              <NavLink className="btn btn-sm md:btn-md rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-700 text-black font-bold text-lg shadow-xl hover:scale-105 hover:from-amber-400 hover:to-amber-600 transition-all duration-300 border border-amber-100/20" to="/register">
+              <NavLink
+                className="btn btn-sm md:btn-md rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-700 text-black font-bold text-lg shadow-xl hover:scale-105 hover:from-amber-400 hover:to-amber-600 transition-all duration-300 border border-amber-100/20"
+                to="/register"
+              >
                 Register
               </NavLink>
             ) : (
-              <NavLink className="btn btn-sm md:btn-md rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-700 text-black font-bold text-lg shadow-xl hover:scale-105 hover:from-amber-400 hover:to-amber-600 transition-all duration-300 border border-amber-100/20" to="/login">
+              <NavLink
+                className="btn btn-sm md:btn-md rounded-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-700 text-black font-bold text-lg shadow-xl hover:scale-105 hover:from-amber-400 hover:to-amber-600 transition-all duration-300 border border-amber-100/20"
+                to="/login"
+              >
                 Login
               </NavLink>
             )}

@@ -152,7 +152,7 @@ const AddArtifact = () => {
             name="imageUrl"
             value={formData.imageUrl}
             onChange={handleChange}
-            className="input input-bordered w-full"
+            className="input input-bordered w-full "
             required
             placeholder="https://example.com/image.jpg"
           />
