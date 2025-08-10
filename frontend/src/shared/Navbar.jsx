@@ -38,7 +38,11 @@ const Navbar = () => {
           All Artifacts
         </NavLink>
       </li>
-
+      <li>
+        <NavLink to="/about" className={navLinkClass}>
+          About Us
+        </NavLink>
+      </li>
       {user && (
         <li>
           <NavLink to="/addArtifact" className={navLinkClass}>
@@ -66,7 +70,12 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar work-sans-text bg-black/90 shadow-2xl mx-auto text-white"> 
+    <div className="navbar page-container work-sans-text shadow-2xl mx-auto text-white bg-gray-500"> 
+
+
+    
+      
+
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

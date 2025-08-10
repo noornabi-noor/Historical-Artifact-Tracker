@@ -16,6 +16,7 @@ import PrivateRoutes from "./../routes/PrivateRoutes";
 import TermsOfService from "../Components/TermsOfServices/TermsOfService";
 import PrivacyPolicy from "../Components/TermsOfServices/PrivacyPolicy";
 import RefundPolicy from "../Components/TermsOfServices/RefundPolicy";
+import About from "../pages/About";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
       {
         path: "myProfile",
