@@ -17,6 +17,7 @@ import TermsOfService from "../Components/TermsOfServices/TermsOfService";
 import PrivacyPolicy from "../Components/TermsOfServices/PrivacyPolicy";
 import RefundPolicy from "../Components/TermsOfServices/RefundPolicy";
 import About from "../pages/About";
+import ContactSupport from "../pages/ContactSupport";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
+        path: "contact",
+        element: <ContactSupport />,
+      },
+      {
         path: "myProfile",
         element: <MyProfile />,
       },
@@ -45,16 +50,16 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/terms" ,
-        element: <TermsOfService/>
+        path: "/terms",
+        element: <TermsOfService />,
       },
       {
-        path: "/privacy" ,
-        element: <PrivacyPolicy/>
+        path: "/privacy",
+        element: <PrivacyPolicy />,
       },
       {
-        path: "/refund" ,
-        element: <RefundPolicy/>
+        path: "/refund",
+        element: <RefundPolicy />,
       },
       {
         path: "allArtifacts",
