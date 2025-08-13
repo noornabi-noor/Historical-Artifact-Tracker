@@ -34,7 +34,7 @@ const FrequentlyAsk = () => {
 
   return (
     <section
-      className="relative py-20 overflow-hidden mt-12 mb-12"
+      className="relative py-20 overflow-hidden mt-12 mb-12 dark:bg-gradient"
       style={{
         background:
           "linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(20,20,20,0.98) 50%, rgba(0,0,0,0.95) 100%)",

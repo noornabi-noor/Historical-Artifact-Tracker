@@ -38,11 +38,7 @@ const steps = [
 const HowItWorksArtifact = () => {
   return (
     <div
-      className="relative mt-12 px-4 py-14 rounded-2xl overflow-hidden shadow-2xl"
-      style={{
-        background:
-          "linear-gradient(15deg, rgba(0,0,0,0.95) 0%, rgba(20,20,20,0.98) 80%, rgba(0,0,0,0.95) 100%)",
-      }}
+      className="relative mt-12 px-4 py-14 rounded-2xl overflow-hidden shadow-2xl bg-gray-500 dark:bg-gray-900"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-amber-600/5" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(251,191,36,0.1),transparent_50%)]" />
@@ -59,7 +55,7 @@ const HowItWorksArtifact = () => {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center  shadow-2xl p-6 rounded-2xl"
+            className="flex flex-col items-center text-center  shadow-2xl p-6 rounded-2xl  dark:bg-gradient"
             style={{
               background:
                 "linear-gradient(100deg, rgba(0,0,0,0.95) 0%, rgba(20,20,20,0.98) 40%, rgba(0,0,0,0.95) 100%)",

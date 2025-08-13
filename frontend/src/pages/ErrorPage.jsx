@@ -123,7 +123,7 @@ export default function ErrorPage() {
                 </a>
               </div>
 
-              <form action="/search" method="get" className="mt-6">
+              {/* <form action="/search" method="get" className="mt-6">
                 <label htmlFor="search" className="sr-only">
                   Search
                 </label>
@@ -143,7 +143,7 @@ export default function ErrorPage() {
                     Search
                   </button>
                 </div>
-              </form>
+              </form> */}
 
               <p className="mt-4 text-sm text-slate-400">
                 If you think this is a mistake,{" "}
