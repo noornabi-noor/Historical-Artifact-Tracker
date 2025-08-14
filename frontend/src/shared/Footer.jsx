@@ -30,7 +30,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="text-gray-200 dark:text-gray-100 hover:text-gray-700 transition dark:hover:text-gray-700 text-2xl"
+              className="text-gray-200 dark:text-gray-100 hover:text-primary transition dark:hover:text-gray-700 text-2xl"
             >
               <FaFacebookF />
             </a>
@@ -39,7 +39,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
-              className="text-gray-200 dark:text-gray-100 hover:text-gray-700 transition dark:hover:text-gray-700 text-2xl"
+              className="text-gray-200 dark:text-gray-100 hover:text-primary transition dark:hover:text-gray-700 text-2xl"
             >
               <FaTwitter />
             </a>
@@ -48,7 +48,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-gray-200 dark:text-gray-100 hover:text-gray-700 transition dark:hover:text-gray-700 text-2xl"
+              className="text-gray-200 dark:text-gray-100 hover:text-primary transition dark:hover:text-gray-700 text-2xl"
             >
               <FaInstagram />
             </a>
@@ -57,7 +57,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-gray-200 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-700 transition text-2xl"
+              className="text-gray-200 dark:text-gray-100 hover:text-primary dark:hover:text-gray-700 transition text-2xl"
             >
               <FaLinkedinIn />
             </a>
